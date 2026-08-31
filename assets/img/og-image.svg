@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+ <linearGradient id="r" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#EFC3B0"/><stop offset="45%" stop-color="#C98A76"/><stop offset="100%" stop-color="#9E6153"/></linearGradient>
+ <radialGradient id="glow" cx="78%" cy="18%" r="60%">
+  <stop offset="0%" stop-color="#C98A76" stop-opacity=".28"/><stop offset="100%" stop-color="#C98A76" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="#131219"/>
+<rect width="1200" height="630" fill="url(#glow)"/>
+<g transform="translate(830,315) scale(0.92)">
+  <circle cx="0" cy="0" r="188" fill="#1B1A22"/>
+  <circle cx="0" cy="0" r="188" fill="none" stroke="#C98A76" stroke-width="3"/>
+  <g fill="none" stroke="#D89C87" stroke-width="1.6">
+    <circle r="166" opacity=".3"/><circle r="147" opacity=".3"/><circle r="128" opacity=".3"/><circle r="109" opacity=".55"/></g>
+  <path d="M-38 -70 L38 -70 L70 -35 L0 82 L-70 -35 Z" fill="url(#r)"/>
+  <g stroke="#24232A" stroke-width="2" opacity=".38" fill="none" stroke-linejoin="round">
+    <path d="M-70 -35 L70 -35"/><path d="M-38 -70 L-19 -35 L0 82"/><path d="M38 -70 L19 -35 L0 82"/></g>
+  <path d="M-38 -70 L38 -70 L19 -35 L-19 -35 Z" fill="#fff" opacity=".16"/>
+</g>
+<text x="90" y="212" font-family="Helvetica,Arial,sans-serif" font-size="20" letter-spacing="8" fill="#C98A76" font-weight="bold">DJ &#183; MC &#183; SOUND &#183; LIGHTING</text>
+<text x="86" y="300" font-family="Georgia,serif" font-size="76" fill="#F6F1EC">SUGAR</text>
+<text x="86" y="384" font-family="Georgia,serif" font-size="76" font-style="italic" fill="#D89C87">&#38; SOUND</text>
+<line x1="90" y1="430" x2="330" y2="430" stroke="#C98A76" stroke-width="1.5"/>
+<text x="90" y="478" font-family="Helvetica,Arial,sans-serif" font-size="23" fill="#A9A3AD">San Francisco &#183; Peninsula &#183; Oakland &#183; San Jose</text>
+<text x="90" y="514" font-family="Helvetica,Arial,sans-serif" font-size="23" fill="#A9A3AD">Napa &#183; Monterey &#183; Tahoe &#183; Reno</text>
+</svg>
