@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Article image placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24232D"/>
+      <stop offset="100%" stop-color="#1B1A22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g fill="none" stroke="#C98A76" stroke-width="2" opacity=".5">
+    <circle cx="400" cy="200" r="80"/>
+    <path d="M320 320 L480 320 L520 380 L280 380 Z"/>
+    <line x1="400" y1="120" x2="400" y2="80"/>
+    <line x1="400" y1="280" x2="400" y2="320"/>
+  </g>
+  <text x="400" y="420" fill="#A9A3AD" font-family="Karla, sans-serif" font-size="14" letter-spacing="4" text-anchor="middle">DANCE FLOOR LIGHTING</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Article image placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1B1A22"/>
+      <stop offset="100%" stop-color="#3A3545"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <path d="M400 90 L560 170 L560 320 L400 380 L240 320 L240 170 Z" fill="none" stroke="#C98A76" stroke-width="2"/>
+  <rect x="360" y="200" width="80" height="100" fill="#C98A76" opacity=".25"/>
+  <text x="400" y="420" fill="#A9A3AD" font-family="Karla, sans-serif" font-size="14" letter-spacing="4" text-anchor="middle">SCHOOL PARTIES</text>
+</svg>
