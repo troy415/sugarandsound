@@ -604,6 +604,69 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 .section--light .divider::before,.section--light .divider::after{background:rgba(36,35,42,.14)}
 .section--light .divider i{background:var(--rose-deep)}
 
+/* wedding package comparison matrix */
+.packages__compare{margin-top:42px}
+.compare{
+  border:1px solid rgba(36,35,42,.1);border-radius:var(--radius);
+  background:#fff;overflow:hidden;
+  display:grid;
+  grid-template-columns:minmax(0,1.55fr) repeat(3,minmax(0,1fr));
+}
+.compare__row{display:contents}
+.compare__group{
+  grid-column:1/-1;padding:12px 22px;
+  font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;
+  color:var(--rose-deep);background:rgba(201,138,118,.1);
+  border-bottom:1px solid rgba(36,35,42,.08);
+}
+.compare__feat,.compare__pkg,.compare__mark{
+  padding:18px 20px;border-bottom:1px solid rgba(36,35,42,.08);
+  border-right:1px solid rgba(36,35,42,.06);
+}
+.compare__feat:last-child,.compare__pkg:last-child,.compare__mark:last-child{border-right:0}
+.compare__row:last-child .compare__feat,
+.compare__row:last-child .compare__mark{border-bottom:0}
+.compare__feat b{display:block;font-family:var(--display);font-size:17px;line-height:1.25;color:#24232A;margin-bottom:6px}
+.compare__feat span{display:block;font-size:14px;line-height:1.5;color:#5F5B66}
+.compare__feat .eyebrow{margin-bottom:10px}
+.compare__pkg{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+  text-align:center;background:rgba(246,241,236,.45);
+}
+.compare__row--head .compare__feat{background:#fff}
+.compare__pkg-name{font-family:var(--display);font-size:18px;line-height:1.15;color:#24232A}
+.compare__pkg-price{
+  font-family:var(--display);font-size:26px;line-height:1;color:var(--rose-deep);
+  font-variant-numeric:tabular-nums;
+}
+.compare__pkg--feature{background:linear-gradient(165deg,rgba(201,138,118,.14),rgba(246,241,236,.7))}
+.compare__pkg-tag{
+  font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+  color:#1B1A22;background:var(--rose-light);padding:4px 9px;border-radius:999px;
+}
+.compare__mark{
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:#6F6A77;font-weight:700;
+}
+.compare__mark--yes{color:var(--rose-deep)}
+.compare__mark--yes::before{
+  content:"";width:11px;height:11px;margin-right:8px;flex:none;
+  background:linear-gradient(135deg,var(--rose-light),var(--rose-deep));
+  transform:rotate(45deg);
+}
+.compare__feat span em.compare__value{
+  font-style:normal;font-size:13px;color:var(--rose-deep);font-weight:700;
+}
+.compare__scroll{
+  overflow-x:auto;-webkit-overflow-scrolling:touch;
+  border:1px solid rgba(36,35,42,.1);border-radius:var(--radius);background:#fff;
+}
+.compare__scroll .compare{min-width:720px;border:0;border-radius:0}
+.compare__hint{
+  margin:0 0 14px;font-size:13px;color:#6F6A77;text-align:center;
+}
+@media (min-width:861px){.compare__hint{display:none}}
+
 #packages,#faq{scroll-margin-top:96px}
 .card__price{
   margin-top:auto;padding-top:16px;font-family:var(--display);font-size:20px;
