@@ -624,7 +624,7 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
   margin:0 0 10px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
   color:#6F6A77;font-weight:700;
 }
-.packages--wedding .packages__chart-legend .pkg-chart__diamond{--gem-size:8px;width:8px;height:9px;margin:0;flex-shrink:0;filter:none}
+.packages--wedding .packages__chart-legend .pkg-chart__diamond{--gem-size:10px;width:10px;height:11px;margin:0;flex-shrink:0;filter:none}
 
 .packages--wedding .packages__chart-shell{
   border:1px solid rgba(36,35,42,.1);border-radius:var(--radius);
@@ -685,12 +685,12 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 }
 .packages--wedding .pkg-chart__feat-name{
   display:block;text-align:left;
-  font-family:var(--body);font-size:14px;line-height:1.3;
-  color:#24232A;font-weight:700;
+  font-family:var(--display);font-size:15px;line-height:1.2;
+  color:#24232A;font-weight:400;letter-spacing:-.01em;
 }
 .packages--wedding .pkg-chart__value{
-  font-family:var(--body);font-size:11px;font-style:normal;
-  color:var(--rose-deep);font-weight:600;
+  font-family:var(--display);font-size:12px;font-style:normal;
+  color:#5F5B66;font-weight:400;
 }
 .packages--wedding .pkg-chart__feat-desc{
   display:block;margin-top:4px;text-align:left;
@@ -706,7 +706,7 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 .packages--wedding .pkg-chart tbody td:nth-child(3).pkg-chart__cell--yes{background:rgba(201,138,118,.1)}
 
 .packages--wedding .pkg-chart__diamond{
-  --gem-size:8px;
+  --gem-size:10px;
   display:block;width:var(--gem-size);height:calc(var(--gem-size) * 1.1);margin:0 auto;
   position:relative;
   background:linear-gradient(165deg,#FFE4DA 0%,var(--rose-light) 28%,var(--rose) 62%,var(--rose-deep) 100%);
@@ -760,20 +760,7 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
   color:var(--rose-deep);font-variant-numeric:tabular-nums;white-space:nowrap;
 }
 
-.packages--wedding .packages__foot{margin-top:28px;display:grid;gap:18px}
-.packages--wedding .packages__highlight{
-  max-width:70ch;
-  border:1px dashed rgba(36,35,42,.18);border-radius:var(--radius);
-  padding:16px 18px;background:rgba(255,255,255,.55);
-}
-.packages--wedding .packages__highlight-kicker{
-  margin:0 0 6px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--rose-deep);font-weight:700;
-}
-.packages--wedding .packages__highlight-copy{
-  margin:0;color:#5F5B66;font-size:14px;line-height:1.55;
-}
-.packages--wedding .packages__highlight-copy b{color:#24232A;font-weight:700}
+.packages--wedding .packages__foot{margin-top:28px}
 .packages--wedding .packages__cta{margin-top:0}
 
 @media (max-width:900px){
@@ -786,7 +773,7 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
   .packages--wedding .pkg-chart thead th{padding:10px 8px}
   .packages--wedding .pkg-chart__name{font-size:14px}
   .packages--wedding .pkg-chart__price{font-size:18px}
-  .packages--wedding .pkg-chart__feat-name{font-size:13px}
+  .packages--wedding .pkg-chart__feat-name{font-size:14px}
   .packages--wedding .pkg-chart__feat-desc{font-size:12.5px}
 }
 @media (max-width:620px){
