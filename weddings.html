@@ -140,9 +140,15 @@
       <div class="pkg-chart__scroll">
         <table class="pkg-chart">
           <caption class="pkg-chart__caption">Wedding package comparison</caption>
+          <colgroup>
+            <col class="pkg-chart__col-feat">
+            <col class="pkg-chart__col-pkg">
+            <col class="pkg-chart__col-pkg">
+            <col class="pkg-chart__col-pkg">
+          </colgroup>
           <thead>
             <tr>
-              <th scope="col" class="pkg-chart__feat-h"><span class="pkg-chart__feat-label">What&rsquo;s included</span></th>
+              <th scope="col" class="pkg-chart__feat-h" aria-hidden="true"></th>
               <th scope="col" class="pkg-chart__pkg">
                 <span class="pkg-chart__name">The Reception</span>
                 <span class="pkg-chart__price">$1,800</span>
@@ -159,101 +165,131 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="pkg-chart__section">
-              <th colspan="4" scope="colgroup">Core experience</th>
+            <tr>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Professional DJ &amp; Master of Ceremonies</span>
+                <span class="pkg-chart__feat-desc">More than music. We keep your timeline on track, your guests in the know, and your reception flowing effortlessly from the first introduction to the last song.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Professional DJ &amp; MC</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Live Mixing &amp; Crowd Reading</span>
+                <span class="pkg-chart__feat-desc">Zero pre-made playlists. Every transition is mixed live and chosen by reading the room, so the energy builds naturally and your dance floor stays packed.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Live mixing &amp; crowd reading</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Stress-Free Music Planning</span>
+                <span class="pkg-chart__feat-desc">You do not have to build the perfect playlist. Just tell us the songs you love and the vibe you are after, and we will use it as our blueprint and mix live all night, adapting on the fly so grandma and your college roommates are both having a great time.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Stress-free music planning</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Collaborative Wedding Planning System</span>
+                <span class="pkg-chart__feat-desc">Map out your music, introductions, timeline, special dances, and reception details whenever inspiration strikes. Our easy online planning keeps every detail in one organized place.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Online planning system</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Vendor &amp; Timeline Coordination</span>
+                <span class="pkg-chart__feat-desc">We sync with your planner, photographer, videographer, venue, and caterer so every announcement, special dance, and milestone lands exactly when it should with no guesswork or missed moments.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Vendor &amp; timeline coordination</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-            </tr>
-            <tr class="pkg-chart__section">
-              <th colspan="4" scope="colgroup">Sound &amp; reception</th>
-            </tr>
-            <tr>
-              <th scope="row" class="pkg-chart__feat">Concert-quality RCF/JBL sound</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Concert-Quality RCF/JBL Sound</span>
+                <span class="pkg-chart__feat-desc">Industry-leading RCF/JBL speakers deliver crystal-clear speeches and rich, full music while tuned so dinner conversation flows easily and not a single word of a toast gets lost.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Dance floor lighting</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Intelligent Dance Floor Lighting</span>
+                <span class="pkg-chart__feat-desc">Soft, elegant lighting during dinner that transforms into a full-on dance party the moment it is time to celebrate.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Wireless mic for toasts</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Wireless Microphone for Toasts</span>
+                <span class="pkg-chart__feat-desc">A reliable, long-range wireless mic ready for speeches, announcements, and every unscripted moment worth hearing.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Licensed &amp; insured ($2M)</th>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-            </tr>
-            <tr class="pkg-chart__section">
-              <th colspan="4" scope="colgroup">Full-day coverage</th>
-            </tr>
-            <tr>
-              <th scope="row" class="pkg-chart__feat">Outdoor ceremony sound</th>
-              <td class="pkg-chart__cell" aria-label="Not included in The Reception"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Licensed &amp; Fully Insured</span>
+                <span class="pkg-chart__feat-desc">$2 million liability coverage, provided to your venue on request; one more box you can check off early.</span>
+              </th>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Reception"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Cocktail hour music</th>
-              <td class="pkg-chart__cell" aria-label="Not included in The Reception"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Dedicated Outdoor Ceremony Sound</span>
+                <span class="pkg-chart__feat-desc">A battery-powered ceremony system with a wireless mic for your officiant and you, so your vows carry clearly; no outlets required.</span>
+              </th>
+              <td class="pkg-chart__cell" aria-label="Not included in The Reception"></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Seamless area transitions</th>
-              <td class="pkg-chart__cell" aria-label="Not included in The Reception"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
-            </tr>
-            <tr class="pkg-chart__section">
-              <th colspan="4" scope="colgroup">Lighting &amp; d&eacute;cor</th>
-            </tr>
-            <tr>
-              <th scope="row" class="pkg-chart__feat">12 wireless uplights <span class="pkg-chart__value">$350 value</span></th>
-              <td class="pkg-chart__cell" aria-label="Not included in The Reception"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell" aria-label="Not included in The Celebration"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Cocktail Hour Music</span>
+                <span class="pkg-chart__feat-desc">A separate sound system for cocktail hour, so the music follows your guests wherever the party is happening.</span>
+              </th>
+              <td class="pkg-chart__cell" aria-label="Not included in The Reception"></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
             <tr>
-              <th scope="row" class="pkg-chart__feat">Monogram projection <span class="pkg-chart__value">$450 value</span></th>
-              <td class="pkg-chart__cell" aria-label="Not included in The Reception"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell" aria-label="Not included in The Celebration"><span class="pkg-chart__mark pkg-chart__mark--no" aria-hidden="true"></span></td>
-              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__mark" aria-hidden="true"></span></td>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Seamless Area Transitions</span>
+                <span class="pkg-chart__feat-desc">Ceremony to cocktail hour to reception, the music never drops out and the momentum never breaks.</span>
+              </th>
+              <td class="pkg-chart__cell" aria-label="Not included in The Reception"></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Celebration"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">12 Wireless Uplights <span class="pkg-chart__value">($350 Value)</span></span>
+                <span class="pkg-chart__feat-desc">Wash your venue in customizable ambient color matched to your wedding palette. Same room, completely different feeling.</span>
+              </th>
+              <td class="pkg-chart__cell" aria-label="Not included in The Reception"></td>
+              <td class="pkg-chart__cell" aria-label="Not included in The Celebration"></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="pkg-chart__feat">
+                <span class="pkg-chart__feat-name">Personalized Monogram Projection <span class="pkg-chart__value">($450 Value)</span></span>
+                <span class="pkg-chart__feat-desc">Your monogram, names, or initials projected onto the dance floor, wall, or ceiling. A personal signature and a stunning focal point for your reception.</span>
+              </th>
+              <td class="pkg-chart__cell" aria-label="Not included in The Reception"></td>
+              <td class="pkg-chart__cell" aria-label="Not included in The Celebration"></td>
+              <td class="pkg-chart__cell pkg-chart__cell--yes" aria-label="Included in The Encore"><span class="pkg-chart__diamond" aria-hidden="true"></span></td>
             </tr>
           </tbody>
         </table>
