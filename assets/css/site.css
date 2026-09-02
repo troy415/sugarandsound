@@ -60,7 +60,7 @@ a:hover{color:var(--rose)}
   line-height:1.02;
   letter-spacing:-.015em;
   margin:0 0 20px;
-  font-size:clamp(40px,7.4vw,78px);
+  font-size:clamp(36px,6.8vw,72px);
 }
 .display em{font-style:italic;color:var(--rose-light)}
 .h2{
@@ -541,7 +541,7 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
   color:#1B1A22;background:var(--rose-light);padding:5px 10px;border-radius:999px;
 }
 .tier-card__top{display:flex;flex-direction:column;gap:10px}
-.tier-card__name{font-family:var(--display);font-size:22px;font-weight:400;margin:0;line-height:1.2}
+.tier-card__name{font-family:var(--display);font-size:clamp(17px,1.5vw,20px);font-weight:400;margin:0;line-height:1.15;letter-spacing:-.01em}
 .tier-card__desc{margin:0;color:var(--muted);font-size:15.5px;line-height:1.55;flex:1}
 .tier-card__price{
   margin-top:auto;padding-top:18px;border-top:1px solid var(--line);
