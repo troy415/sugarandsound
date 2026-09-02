@@ -648,8 +648,8 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
   padding:12px 10px;vertical-align:bottom;text-align:center;
   background:#fff;border-bottom:1px solid rgba(36,35,42,.12);
 }
-.packages--wedding .pkg-chart__feat-h{
-  padding:12px 16px;text-align:left;vertical-align:bottom;
+.packages--wedding .pkg-chart thead th.pkg-chart__feat-h{
+  padding:12px 28px 12px 40px;text-align:left;vertical-align:bottom;
   background:#fff;border-right:1px solid rgba(36,35,42,.08);
 }
 .packages--wedding .pkg-chart__pkg{border-left:1px solid rgba(36,35,42,.08)}
@@ -680,8 +680,8 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 .packages--wedding .pkg-chart tbody tr:last-child th,
 .packages--wedding .pkg-chart tbody tr:last-child td{border-bottom:0}
 
-.packages--wedding .pkg-chart__feat{
-  text-align:left;font-weight:400;padding:11px 16px;vertical-align:top;
+.packages--wedding .pkg-chart tbody th.pkg-chart__feat{
+  text-align:left;font-weight:400;padding:14px 28px 14px 40px;vertical-align:top;
   border-right:1px solid rgba(36,35,42,.08);
 }
 .packages--wedding .pkg-chart__feat-name{
@@ -769,8 +769,8 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 }
 @media (max-width:760px){
   .packages--wedding .pkg-chart{min-width:580px}
-  .packages--wedding .pkg-chart__feat{padding:10px 14px}
-  .packages--wedding .pkg-chart__feat-h{padding:10px 14px}
+  .packages--wedding .pkg-chart tbody th.pkg-chart__feat{padding:12px 20px 12px 24px}
+  .packages--wedding .pkg-chart thead th.pkg-chart__feat-h{padding:10px 20px 10px 24px}
   .packages--wedding .pkg-chart thead th{padding:10px 8px}
   .packages--wedding .pkg-chart__name{font-size:14px}
   .packages--wedding .pkg-chart__price{font-size:18px}
