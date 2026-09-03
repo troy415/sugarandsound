@@ -520,6 +520,14 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 .tiers--1{max-width:480px;margin-inline:auto}
 .tiers--2{grid-template-columns:repeat(2,1fr)}
 .tiers--3{grid-template-columns:repeat(3,1fr)}
+@media (min-width:621px){
+  .tiers--2 > :last-child:nth-child(odd){
+    grid-column:1/-1;
+    max-width:calc((100% - 20px) / 2);
+    width:100%;
+    justify-self:center;
+  }
+}
 @media (max-width:900px){.tiers--3{grid-template-columns:1fr}}
 @media (max-width:620px){.tiers--2{grid-template-columns:1fr}}
 
