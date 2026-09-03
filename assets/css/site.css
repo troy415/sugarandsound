@@ -595,7 +595,6 @@ a.article-card:hover{transform:translateY(-4px);border-color:var(--rose);color:i
 }
 
 .packages__foot{margin-top:36px;display:grid;gap:24px}
-.packages__foot .lede{margin:0;max-width:none}
 .packages__cta{margin-top:0}
 .packages__tiers + .packages__cta{margin-top:32px}
 .section--light .notice{
