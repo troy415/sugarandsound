@@ -41,7 +41,7 @@ Search and replace across all files (any editor's find-in-folder does this in on
 | `https://sugarandsound.com` | your real domain |
 
 Then check these **placeholder numbers** on the home page and about page and make them true:
-`15+ years`, `1,200+ events`, `9 counties`. Investors, planners and school admins do check.
+`25+ years`, `hundreds of events`, `9 counties`. Investors, planners and school admins do check.
 
 Finally, the testimonials on every page are written as examples. Swap in real quotes from your
 Google, Yelp, The Knot or WeddingWire reviews, with a first name and event type.
