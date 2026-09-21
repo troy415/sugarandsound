@@ -207,6 +207,7 @@ a:hover{color:var(--rose)}
 .shot{
   margin:0;border-radius:var(--radius);overflow:hidden;
   border:1px solid var(--line);background:var(--ink-3);
+  position:relative;
 }
 .shot img{width:100%;height:100%;object-fit:cover;display:block}
 .shot--cinematic{aspect-ratio:16/9}
@@ -226,8 +227,44 @@ a:hover{color:var(--rose)}
   max-width:var(--wrap);margin:0 auto;padding:22px var(--pad) 8px;
 }
 .shots--home .shot{aspect-ratio:4/3}
-.shots--home a.shot{display:block;transition:transform .25s ease,border-color .25s ease}
-.shots--home a.shot:hover{transform:translateY(-3px);border-color:var(--rose)}
+.shots--home a.shot{
+  display:block;color:var(--champagne);
+  transition:transform .25s ease,border-color .25s ease;
+}
+.shots--home a.shot img{transition:transform .45s ease}
+.shots--home a.shot::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(19,18,25,.82) 0%,rgba(19,18,25,.28) 38%,transparent 62%);
+  transition:background .25s ease;
+}
+.shot__label{
+  position:absolute;z-index:1;left:0;right:0;bottom:0;
+  padding:18px 14px 14px;
+  font-family:var(--display);font-size:clamp(18px,1.7vw,22px);
+  font-weight:400;letter-spacing:.01em;line-height:1;color:var(--champagne);
+  pointer-events:none;
+}
+.shot__label::after{
+  content:"→";
+  font-family:var(--body);font-size:11px;font-weight:700;
+  letter-spacing:.12em;margin-left:8px;color:var(--rose-light);
+  vertical-align:middle;
+}
+.shots--home a.shot:hover,
+.shots--home a.shot:focus-visible{
+  transform:translateY(-3px);border-color:var(--rose);color:var(--champagne);
+}
+.shots--home a.shot:hover img,
+.shots--home a.shot:focus-visible img{transform:scale(1.04)}
+.shots--home a.shot:hover .shot__label,
+.shots--home a.shot:focus-visible .shot__label{color:var(--rose-light)}
+@media (prefers-reduced-motion:reduce){
+  .shots--home a.shot,.shots--home a.shot img{transition:none}
+  .shots--home a.shot:hover,
+  .shots--home a.shot:focus-visible{transform:none}
+  .shots--home a.shot:hover img,
+  .shots--home a.shot:focus-visible img{transform:none}
+}
 @media (max-width:900px){
   .shots--pair,.shots--trio,.shots--home{grid-template-columns:1fr 1fr}
   .shots--pair .shot:first-child,.shots--pair .shot:last-child{aspect-ratio:4/3}
