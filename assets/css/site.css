@@ -108,12 +108,12 @@ a:hover{color:var(--rose)}
   border-bottom:1px solid var(--line);
 }
 .top__inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
-.brand{display:flex;align-items:center;gap:12px;color:var(--champagne)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--champagne);flex-shrink:0}
 .brand:hover{color:var(--champagne)}
 .brand svg,.brand img{width:40px;height:40px;flex:none}
 .brand__txt{display:block}
 .brand__txt b{font-family:var(--display);font-size:19px;font-weight:400;letter-spacing:.02em;display:block;line-height:1.05;color:var(--champagne)}
-.brand__txt span{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);display:block}
+.brand__txt span{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--rose);display:block;white-space:nowrap}
 .nav{display:flex;align-items:center;gap:26px}
 .nav a{
   color:var(--champagne);font-size:12.5px;font-weight:600;
@@ -148,6 +148,13 @@ a:hover{color:var(--rose)}
 .hero{position:relative;overflow:hidden;padding-block:clamp(56px,10vw,110px) clamp(48px,8vw,90px)}
 .hero__inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
 .hero--slim .hero__inner{grid-template-columns:1fr;max-width:860px}
+.hero--slim.hero--photo .hero__inner{grid-template-columns:1.08fr .92fr;max-width:none;align-items:center}
+.hero__photo{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);aspect-ratio:4/5;box-shadow:var(--shadow);
+}
+.hero__photo--wide{aspect-ratio:5/4}
+.hero__photo img{width:100%;height:100%;object-fit:cover;display:block}
 .hero__glow{
   position:absolute;z-index:0;pointer-events:none;
   width:840px;height:840px;right:-260px;top:-320px;
@@ -158,8 +165,9 @@ a:hover{color:var(--rose)}
 .hero__stat b{display:block;font-family:var(--display);font-size:30px;line-height:1;color:var(--rose-light)}
 .hero__stat span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2)}
 @media (max-width:900px){
-  .hero__inner{grid-template-columns:1fr;gap:36px}
+  .hero__inner,.hero--slim.hero--photo .hero__inner{grid-template-columns:1fr;gap:36px}
   .hero__art{order:-1;max-width:280px}
+  .hero__photo{aspect-ratio:16/10;max-width:560px;order:-1}
 }
 
 /* the spinning record — the site's signature device */
@@ -193,6 +201,41 @@ a:hover{color:var(--rose)}
 @keyframes slide{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){
   .marquee__track{animation:none;flex-wrap:wrap;width:100%;justify-content:center}
+}
+
+/* ---------- event photos ---------- */
+.shot{
+  margin:0;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);background:var(--ink-3);
+}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot--cinematic{aspect-ratio:16/9}
+.pos-top{object-position:50% 18%}
+.pos-upper{object-position:50% 32%}
+.pos-left{object-position:28% 50%}
+.pos-right{object-position:72% 45%}
+.shots{display:grid;gap:12px}
+.shots--pair{grid-template-columns:1.35fr 1fr;align-items:stretch}
+.shots--pair .shot:first-child{aspect-ratio:16/10}
+.shots--pair .shot:last-child{aspect-ratio:4/5}
+.shots--trio{grid-template-columns:repeat(3,1fr)}
+.shots--trio .shot{aspect-ratio:5/4}
+.shots--wide .shot{aspect-ratio:16/9}
+.shots--home{
+  grid-template-columns:repeat(4,1fr);gap:8px;
+  max-width:var(--wrap);margin:0 auto;padding:22px var(--pad) 8px;
+}
+.shots--home .shot{aspect-ratio:4/3}
+.shots--home a.shot{display:block;transition:transform .25s ease,border-color .25s ease}
+.shots--home a.shot:hover{transform:translateY(-3px);border-color:var(--rose)}
+@media (max-width:900px){
+  .shots--pair,.shots--trio,.shots--home{grid-template-columns:1fr 1fr}
+  .shots--pair .shot:first-child,.shots--pair .shot:last-child{aspect-ratio:4/3}
+}
+@media (max-width:620px){
+  .shots--trio,.shots--home{grid-template-columns:1fr 1fr}
+  .shots--pair{grid-template-columns:1fr}
+  .shots--home .shot{aspect-ratio:4/3}
 }
 
 /* ---------- sections ---------- */
